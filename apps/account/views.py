@@ -8,3 +8,7 @@ from django.views.generic import TemplateView
 class LoginView(TemplateView):
     template_name = 'account/login.html'
 
+
+class RegisterView(TemplateView):
+    template_name = 'account/register.html'
+
