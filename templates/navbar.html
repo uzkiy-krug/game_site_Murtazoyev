@@ -3,11 +3,11 @@
 <header class="header-section">
     <div class="container">
 
-        <a class="site-logo" href="index-2.html">
+        <a class="site-logo" href="{% url 'main:home' %}">
             <img src="{% static 'img/logo.png' %}" alt>
         </a>
         <div class="user-panel">
-            <a href="#">Login</a> / <a href="#">Register</a>
+            <a href="{% url 'account:login' %}">Login</a> / <a href="#">Register</a>
         </div>
 
         <div class="nav-switch">
@@ -16,11 +16,11 @@
 
         <nav class="main-menu">
             <ul>
-                <li><a href="index-2.html">Home</a></li>
-                <li><a href="review.html">Games</a></li>
-                <li><a href="categories.html">Blog</a></li>
-                <li><a href="forums.html">Forums</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="{% url 'main:home' %}">Home</a></li>
+                <li><a href="{% url 'game:games' %}">Games</a></li>
+                <li><a href="{% url 'blog:list' %}">Blog</a></li>
+                <li><a href="{% url 'main:forum' %}">Forums</a></li>
+                <li><a href="{% url 'main:contact' %}">Contact</a></li>
             </ul>
         </nav>
     </div>

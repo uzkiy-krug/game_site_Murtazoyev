@@ -13,4 +13,9 @@ class HomeView(TemplateView):
     #     return self.render_to_response(context)
 
 
+class ContactView(TemplateView):
+    template_name = 'main/contact.html'
 
+
+class ForumView(TemplateView):
+    template_name = 'main/forums.html'

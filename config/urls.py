@@ -22,7 +22,10 @@ from config import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('apps.main.urls', namespace='main'))
+    path('', include('apps.main.urls', namespace='main')),
+    path('game/', include('apps.game.urls', namespace='game')),
+    path('blog/', include('apps.blog.urls', namespace='blog')),
+    path('accounts/', include('apps.account.urls', namespace='account')),
 ]
 
 
